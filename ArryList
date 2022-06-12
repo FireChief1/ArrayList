@@ -1,0 +1,73 @@
+using System;
+using System.Collections.Generic;
+using System.Collections;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            //System.Collections namespace
+
+
+            ArrayList liste = new ArrayList();
+            liste.Add("merhaba");
+            liste.Add("ali");
+            liste.Add(575564);
+            liste.Add("kalem");
+
+
+            foreach ( var item in liste)
+            {
+                Console.WriteLine(item);
+            }
+
+
+            //Addrange
+            Console.WriteLine("******ADD RANGE*********");
+        
+
+
+            string[] renkler = new string[] {"kırmızı","yeşil" ,"sarı"};
+            List<int> sayılar = new List<int>() {789,54,6879,51,321,8974,1,56,9,1,7,878,12,8,47, }; 
+
+
+            liste.AddRange(renkler);
+            liste.AddRange(sayılar);
+            foreach (var item in liste) 
+            {
+                Console.WriteLine(item);
+            }
+
+            //Sorting
+
+            Console.WriteLine("*********Sort**********");
+            liste.Sort();//sadace integer değer olamlı runtime da hata verecek
+
+
+
+
+
+
+
+
+
+
+            Console.ReadKey();
+        }
+
+
+        }
+
+
+    }
+
+
+
+    
+
